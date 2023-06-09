@@ -125,6 +125,7 @@ func wait() {
 			}
 		case <-maxWaitTicker.C:
 			fmt.Println("async send msg timeout")
+			return
 		}
 	}
 }
